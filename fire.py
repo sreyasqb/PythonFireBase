@@ -7,27 +7,25 @@ cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 
 db=firestore.client()
-rest_text='''Rest period is to relax the muscles to which you have given workouts; Dips would have stiffened the
-muscles especially in your triceps, wrist joint and whole of your hands so shake your hands in order to
-loosen it up.'''
-
-id="L3_9"
+# rest_text='''Rest period is to relax the muscles to which you have given workouts, Stepping/squats would have stiffened the muscles in your thigh muscles and other parts of your legs , so shake your thigh muscles, other parts of legs and loosen it up by slow walking or jogging'''
+id="L1_C2"
 data={
-    'title':'''Dips
-
+    'title':'''Flexibility Exercises
 ''',
-    'description':'''Take position in front of a step, step shall be with a minimal height of 12 to 18 inches, shall use door step/wooden planks/chair etc., for this purpose, place both the hands on the edge of the step with a couple of inches wider than your shoulder width, with your hip close to the step stretch your legs straight in the supine position, your full body weight will be on your hands, now slowly flex your elbow for few inches so that you take your body downward, only partial flexing of elbow is advised, then move back to the original position, it should be in the DOWN-UP-DOWN-UP movement pattern.  Phasing up should be moderate.  
-     ''',
+    'description':'''Do stretching movements for your muscles like hamstring and greater rhomboid by doing the toe touching flexibility exercise and do lounging exercise to stretch your adductor and gastrocnemius muscles.  Unlike doing these exercises during the warming-up time, during warming-down these exercises should be done in much slower phase
+    ''',
     'id':id,
-    'setCount':8,
-    'time':"00:25",
+    'setCount':1,
+    'time':"05:00",
     'calorieValue':5,
     'isRest':False,
-    'musclesStrengthened':'''
-    Upper Body Workout
-It strengthen the Triceps – back of the Biceps muscles and also strengthens wrist and fore arm
- ''',
-    'youtubeUrl':"Not Available"
+    'youtubeUrl':"Not Available",
+    'imageUrl':"",
+#     'musclesStrengthened':'''
+#     Upper Body Workout
+# It strengthen the Triceps – back of the Biceps muscles and also strengthens wrist and fore arm
+#  '''
+
 
 }
 dataR={
@@ -40,12 +38,15 @@ dataR={
     'calorieValue':5,
     'isRest':True
 }
+# db.collection('ExerciseData').document(id).set(data)
+
 jumpingJack ="https://assets8.lottiefiles.com/packages/lf20_btqxjpsz.json"
 pushups = "https://assets4.lottiefiles.com/packages/lf20_QegQCG.json"
 squats="https://s36370.pcdn.co/wp-content/uploads/2017/02/Wall-Squats.jpg"
 mount="https://media1.popsugar-assets.com/files/thumbor/Iu8waoj6rmL6c7B8gZUdS1ZIa3I/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/06/08/791/n/1922729/c4943793a2ba2dd5_SlowerClimbers.gif"
 planks="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhWo1HIry93gjaAKf696iaALYsBcfzgL9OCA&usqp=CAU"
-stepping="https://www.healthier.qld.gov.au/wp-content/uploads/2015/07/21_M_WIP02.gif"
+# stepping="https://www.healthier.qld.gov.au/wp-content/uploads/2015/07/21_M_WIP02.gif"
+stepping="https://3i133rqau023qjc1k3txdvr1-wpengine.netdna-ssl.com/wp-content/uploads/2014/08/Up-Up-Down-Down_Exercise.jpg"
 skipping="https://assets7.lottiefiles.com/packages/lf20_5ucyqblz.json"
 dips="https://media4.giphy.com/media/4zIMiq61O8M2ZBxfRv/giphy.gif"
 crunches="https://assets8.lottiefiles.com/packages/lf20_Ajcy3F.json"
@@ -70,6 +71,30 @@ crunchesyt="https://www.youtube.com/watch?v=Xyd_fa5zoEU"
 calfyt="https://www.youtube.com/watch?v=-M4-G8p8fmc"
 jjfyt="https://www.youtube.com/watch?v=roHYKy3YKJI"
 
+#warmup links
+run=""
+highKnee="https://www.icegif.com/wp-content/uploads/high-knees-icegif.gif"
+breathing=""
+forwardTilt="https://thumbs.gfycat.com/BlackYearlyJumpingbean-size_restricted.gif"
+sidewardTilt="https://im.idiva.com/content/2020/Oct/12-1_5f9c0bcdb8b93.gif"
+sidewardTurn="https://www.verywellhealth.com/thmb/taKjtLDviSbEU0yQnLvE2GGry2M=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Verywell-23-2696365-SideToSide01-1908-59933a3fd088c00013cd036f.gif"
+chinRoll=""
+headRotation="https://www.talkingtrendo.com/wp-content/uploads/2020/03/785914_887fe82452cd4df2b47fd58378a90bc5.gif"
+armSwinging=""
+armRotation="https://177d01fbswx3jjl1t20gdr8j-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/ArmCircles.gif"
+trunkTwist=""
+toeTouch="https://photos.demandstudios.com/getty/article/178/215/78629463.jpg"
+sideStrech="https://i.pinimg.com/originals/2f/99/0c/2f990cb1c506615126817ff60fb4601e.gif"
+oppToeTouch="https://i.pinimg.com/originals/7b/87/b8/7b87b85072778d543f2ebe3cd57e764c.png"
+forwardBending=""
+lunging="https://c.tenor.com/PF7Q7Qu1wJEAAAAM/lunges.gif"
+ankleRotation="https://www.spotebi.com/wp-content/uploads/2015/03/ankle-circles-exercise-illustration.jpg"
+forearmFlexor="https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/400x400_5_Good_Yoga_Stretches_For_Your_Arms_Fingers_Up_and_Down_Stretch.gif"
+forearmExtonser="https://thumbs.gfycat.com/ColorfulViciousJellyfish-max-1mb.gif"
+tricepStrech="https://www.vissco.com/wp-content/uploads/animation/sub/triceps-stretch.gif"
+
+stuff={'imageUrl':tricepStrech}
+db.collection('ExerciseData').document('L1_W18c').update(stuff)
 
 #lists
 jjL=["L1_1","L2_1","L3_1",'L4_1','L4_1_F']
@@ -84,13 +109,29 @@ crunchesL=["L2_10",'L3_11','L3_11_F','L4_11']
 mountL=["L2_5",'L4_6']
 skippingL=["L3_5",'L4_5']
 
+#Warmup List
+warmupL=["L1_W1","L1_W2","L1_W3","L1_W4","L1_W5","L1_W6","L1_W7","L1_W8","L1_W9","L1_W10","L1_W11","L1_W12",'l1_W13','l1_W14','l1_W15','L1_W16','L1_W17','L1_W18a','L1_W18b','L1_W18c']
+cdL=["L1_C1","L1_C2"]
+
+#updating the warmup list
+# levD=db.collection('WomenLevelData').document('Level 1').get().to_dict()
+# existing_list=levD['exerciseIds']
+# new_list=warmupL+existing_list+cdL
+# # print(new_list)
+# excData={'exerciseIds':new_list}
+# db.collection('WomenLevelData').document('Level 4').update(excData)
+
+
+# stuff={'description':rest_text}
+# stuff={'imageUrl':stepping}
+# for i in steppingL:
+#     db.collection('ExerciseData').document(i).update(stuff)
 
 
 
 
-stuff={'description':rest_text}
 # stuff={'imageUrl':dips}
-db.collection('ExerciseData').document('L1_R6').update(stuff)
+# db.collection('ExerciseData').document('L1_R2').update(stuff)
 # db.collection('ExerciseData').document(id).set(data)
 # db.collection('ExerciseData').document(id).set(dataR)
 # string='''It strengthens the core muscles
