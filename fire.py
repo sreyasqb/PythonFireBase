@@ -8,19 +8,19 @@ firebase_admin.initialize_app(cred)
 
 db=firestore.client()
 # rest_text='''Rest period is to relax the muscles to which you have given workouts, Stepping/squats would have stiffened the muscles in your thigh muscles and other parts of your legs , so shake your thigh muscles, other parts of legs and loosen it up by slow walking or jogging'''
-id="L1_C2"
+id="L1_C5"
 data={
-    'title':'''Flexibility Exercises
+    'title':'''Lounges.
 ''',
-    'description':'''Do stretching movements for your muscles like hamstring and greater rhomboid by doing the toe touching flexibility exercise and do lounging exercise to stretch your adductor and gastrocnemius muscles.  Unlike doing these exercises during the warming-up time, during warming-down these exercises should be done in much slower phase
+    'description':'''Position one leg forward and other leg in the back, lounging position, both the toes and the body should face the side towards the direction of the front leg.  While doing this exercise both the heels should not be lifted, back foot knee should not be bent, front foot knee shall be bent, body should be upright and slowly try to bring down your hip and hold this position for eight seconds, then twist your body and convert the front foot as back foot and back foot as front foot and hold on this position for eight seconds.  Repeat this movement twice.  This exercise gives good stretch for the gastrocnemius, soleus and adductor muscles    
     ''',
     'id':id,
-    'setCount':1,
-    'time':"05:00",
+    'setCount':2,
+    'time':"01:00",
     'calorieValue':5,
     'isRest':False,
     'youtubeUrl':"Not Available",
-    'imageUrl':"",
+    'imageUrl':"https://www.verywellfit.com/thmb/VcxenO6ubRDpWvJwUEArpAwxWd4=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/standinglungestretch-d85003f162a9407e8112b91de42bf022.jpg",
 #     'musclesStrengthened':'''
 #     Upper Body Workout
 # It strengthen the Triceps – back of the Biceps muscles and also strengthens wrist and fore arm
@@ -72,19 +72,18 @@ calfyt="https://www.youtube.com/watch?v=-M4-G8p8fmc"
 jjfyt="https://www.youtube.com/watch?v=roHYKy3YKJI"
 
 #warmup links
-run=""
+run="https://c.tenor.com/8y_rhrPTw50AAAAC/jogging.gif"
 highKnee="https://www.icegif.com/wp-content/uploads/high-knees-icegif.gif"
-breathing=""
 forwardTilt="https://thumbs.gfycat.com/BlackYearlyJumpingbean-size_restricted.gif"
 sidewardTilt="https://im.idiva.com/content/2020/Oct/12-1_5f9c0bcdb8b93.gif"
 sidewardTurn="https://www.verywellhealth.com/thmb/taKjtLDviSbEU0yQnLvE2GGry2M=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Verywell-23-2696365-SideToSide01-1908-59933a3fd088c00013cd036f.gif"
 chinRoll=""
 headRotation="https://www.talkingtrendo.com/wp-content/uploads/2020/03/785914_887fe82452cd4df2b47fd58378a90bc5.gif"
-armSwinging=""
+armSwinging="http://theyaregettingold.weebly.com/uploads/1/3/5/2/13524197/6737757_orig.jpg"
 armRotation="https://177d01fbswx3jjl1t20gdr8j-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/ArmCircles.gif"
-trunkTwist=""
-toeTouch="https://photos.demandstudios.com/getty/article/178/215/78629463.jpg"
-sideStrech="https://i.pinimg.com/originals/2f/99/0c/2f990cb1c506615126817ff60fb4601e.gif"
+trunkTwist="https://thumbs.gfycat.com/ParchedOpulentConch-size_restricted.gif"
+toeTouch="https://media.istockphoto.com/vectors/yoga-collection-woman-set-vector-illustration-vector-id1248195927?k=20&m=1248195927&s=612x612&w=0&h=Frtl5NHJG9PFtiucn5z9vQUN1jDCSLAEmnmrx1rY1hU="
+sideStrech="https://postpartumtrainer.com/wp-content/uploads/2020/05/animation-27-1.gif"
 oppToeTouch="https://i.pinimg.com/originals/7b/87/b8/7b87b85072778d543f2ebe3cd57e764c.png"
 forwardBending=""
 lunging="https://c.tenor.com/PF7Q7Qu1wJEAAAAM/lunges.gif"
@@ -93,8 +92,8 @@ forearmFlexor="https://images-prod.healthline.com/hlcmsresource/images/topic_cen
 forearmExtonser="https://thumbs.gfycat.com/ColorfulViciousJellyfish-max-1mb.gif"
 tricepStrech="https://www.vissco.com/wp-content/uploads/animation/sub/triceps-stretch.gif"
 
-stuff={'imageUrl':tricepStrech}
-db.collection('ExerciseData').document('L1_W18c').update(stuff)
+# stuff={'imageUrl':sideStrech}
+# db.collection('ExerciseData').document('L1_W13').update(stuff)
 
 #lists
 jjL=["L1_1","L2_1","L3_1",'L4_1','L4_1_F']
@@ -110,16 +109,17 @@ mountL=["L2_5",'L4_6']
 skippingL=["L3_5",'L4_5']
 
 #Warmup List
-warmupL=["L1_W1","L1_W2","L1_W3","L1_W4","L1_W5","L1_W6","L1_W7","L1_W8","L1_W9","L1_W10","L1_W11","L1_W12",'l1_W13','l1_W14','l1_W15','L1_W16','L1_W17','L1_W18a','L1_W18b','L1_W18c']
-cdL=["L1_C1","L1_C2"]
+warmupL=["L1_W1","L1_W2","L1_W3","L1_W4","L1_W5","L1_W6","L1_W7","L1_W8","L1_W9","L1_W10","L1_W11","L1_W12",'L1_W13','L1_W14','L1_W15','L1_W16','L1_W17','L1_W18a','L1_W18b','L1_W18c']
+cdL=["L1_C1","L1_W12","L1_C5","L1_W18c","L1_C3","L1_C4"]
 
 #updating the warmup list
-# levD=db.collection('WomenLevelData').document('Level 1').get().to_dict()
-# existing_list=levD['exerciseIds']
-# new_list=warmupL+existing_list+cdL
-# # print(new_list)
-# excData={'exerciseIds':new_list}
-# db.collection('WomenLevelData').document('Level 4').update(excData)
+#MenLevelData WomenLevelData
+levD=db.collection('WomenLevelData').document('Level 1').get().to_dict()
+existing_list=levD['exerciseIds']
+new_list=warmupL+existing_list+cdL
+print(new_list)
+excData={'exerciseIds':new_list}
+db.collection('WomenLevelData').document('Level 1').update(excData)
 
 
 # stuff={'description':rest_text}
